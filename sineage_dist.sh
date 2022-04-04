@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Install X enviroment
-apt install -y --no-install-recommends xserver-xorg xserver-xorg-input-evdev 
+sudo apt install -y --no-install-recommends xserver-xorg xserver-xorg-input-evdev 
 
 # Download  Electron 5.0.2
 cd ~
@@ -11,7 +11,7 @@ cd Electron
 unzip ../electron-v5.0.2-linux-armv7l.zip
 
 # install the dependencies for Electron
-apt install -y --no-install-recommends libnss3 libgtkextra-dev libgtk-3-0 libxtst-dev libxss1 
+sudo apt install -y --no-install-recommends libnss3 libgtkextra-dev libgtk-3-0 libxtst-dev libxss1 
 
 #change rc.local file
 sudo mv /etc/rc.local /etc/rc.local.bkp
