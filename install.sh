@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt install git
+sudo apt install git vim -y
 
 cd ~
 # Delete the project folder
@@ -9,7 +9,9 @@ cd ~
 # download latest version of project
 git clone https://github.com/chevolec/sineage_dist.git
 
+mv sineage_dist/* ./
 mv bashrc .bashrc
+rm -fr sineage_dist
 
-chmod +x install_sineage.sh
-./install_sineage.sh
+chmod +x sineage_dist.sh
+./sineage_dist.sh
