@@ -14,4 +14,4 @@ mv bashrc .bashrc
 rm -fr sineage_dist
 
 chmod +x sineage_dist.sh
-./sineage_dist.sh
+
