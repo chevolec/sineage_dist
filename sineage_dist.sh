@@ -24,7 +24,7 @@ sudo chown root:root  /etc/rc.local
 chmod +x autorun.sh
 
 #Get sineage file
-wget ftp://asdf:zxcv@192.168.68.120/$HOSTNAME.zip
+#wget ftp://asdf:zxcv@192.168.68.120/$HOSTNAME.zip
 
 mkdir display
 cd display
