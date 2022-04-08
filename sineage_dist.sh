@@ -18,6 +18,7 @@ sudo mv /etc/rc.local /etc/rc.local.bkp
 
 # Copy the edited file
 sudo mv /home/pi/rc.local  /etc/rc.local
+sudo chmod 755 /etc/rc.local
 sudo chown root:root  /etc/rc.local
 
 #set executable autorun
@@ -28,7 +29,8 @@ chmod +x autorun.sh
 
 mkdir display
 cd display
-unzip -j ../$HOSTNAME.zip
+# unzip -j ../$HOSTNAME.zip
+unzip -j ../N06WgA.zip
 
 
 # Clean up files
