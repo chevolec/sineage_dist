@@ -17,9 +17,11 @@ sudo apt install -y --no-install-recommends libnss3 libgtkextra-dev libgtk-3-0 l
 sudo mv /etc/rc.local /etc/rc.local.bkp
 
 # Copy the edited file
-sudo mv /home/pi/rc.local  /etc/rc.local
-sudo chmod 755 /etc/rc.local
-sudo chown root:root  /etc/rc.local
+#sudo mv /home/pi/rc.local  /etc/rc.local
+#sudo chmod 755 /etc/rc.local
+#sudo chown root:root  /etc/rc.local
+
+
 
 #set executable autorun
 chmod +x /home/pi/autorun.sh
@@ -36,4 +38,10 @@ unzip -j /home/pi/N06WgA.zip
 # Clean up files
 
 
-sudo shutdown -r now
+#sudo shutdown -r now
+
+#Manually add lines to rc.local
+echo 'in /etc/rc.local insert'
+echo 'Xorg -s 0 -quiet -nocursor &'
+echo 'sudo -u pi /home/pi/autorun.sh >/home/pi/auto.log 2>&1 &'
+echo 'after that, restart'
