@@ -22,15 +22,15 @@ sudo chmod 755 /etc/rc.local
 sudo chown root:root  /etc/rc.local
 
 #set executable autorun
-chmod +x autorun.sh
+chmod +x /home/pi/autorun.sh
 
 #Get sineage file
 #wget ftp://asdf:zxcv@192.168.68.120/$HOSTNAME.zip
-
-mkdir display
-cd display
+cd
+mkdir /home/pi/display
+cd /home/pi/display
 # unzip -j ../$HOSTNAME.zip
-unzip -j ../N06WgA.zip
+unzip -j /home/pi/N06WgA.zip
 
 
 # Clean up files
