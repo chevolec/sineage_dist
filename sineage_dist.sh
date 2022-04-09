@@ -14,7 +14,7 @@ unzip ../electron-v5.0.2-linux-armv7l.zip
 sudo apt install -y --no-install-recommends libnss3 libgtkextra-dev libgtk-3-0 libxtst-dev libxss1 
 
 #change rc.local file
-sudo mv /etc/rc.local /etc/rc.local.bkp
+#sudo mv /etc/rc.local /etc/rc.local.bkp
 
 # Copy the edited file
 #sudo mv /home/pi/rc.local  /etc/rc.local
