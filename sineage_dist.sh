@@ -36,12 +36,15 @@ unzip -j /home/pi/N06WgA.zip
 
 
 # Clean up files
-
-
+rm electron-v5.0.2-linux-armv7l.zip
+rm sineage_dist.sh
+rm README.md
+rm N06WgA.zip
+rm install.sh
 #sudo shutdown -r now
 
 #Manually add lines to rc.local
-echo 'in /etc/rc.local insert'
+echo 'To finish the setup, in the file /etc/rc.local, insert'
 echo 'Xorg -s 0 -quiet -nocursor &'
 echo 'sudo -u pi /home/pi/autorun.sh >/home/pi/auto.log 2>&1 &'
 echo 'after that, restart'
