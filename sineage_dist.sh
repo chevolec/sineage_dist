@@ -45,3 +45,5 @@ echo 'in /etc/rc.local insert'
 echo 'Xorg -s 0 -quiet -nocursor &'
 echo 'sudo -u pi /home/pi/autorun.sh >/home/pi/auto.log 2>&1 &'
 echo 'after that, restart'
+
+# /home/pi/Electron/electron --display=:0 /home/pi/display
