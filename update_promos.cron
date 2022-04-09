@@ -1,0 +1,8 @@
+#!/bin/bash
+wget --user=testing@opcosmocel.com --password=Tecate.21 -O /home/pi/Promos.zip ftp://ftp.opcosmocel.com/Promos.zip
+cd /home/pi/display
+# unzip -j ../$HOSTNAME.zip
+unzip -jo /home/pi/Promos.zip
+rm /home/pi/Promos.zip
+
+pkill electron

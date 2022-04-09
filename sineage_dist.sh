@@ -25,6 +25,7 @@ sudo apt install -y --no-install-recommends libnss3 libgtkextra-dev libgtk-3-0 l
 
 #set executable autorun
 chmod +x /home/pi/autorun.sh
+chmod +x update_promos.cron
 
 #Get sineage file
 #wget ftp://asdf:zxcv@192.168.68.120/$HOSTNAME.zip
